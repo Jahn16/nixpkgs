@@ -707,6 +707,8 @@ with pkgs;
     inherit (darwin.apple_sdk.frameworks) Security;
   };
 
+  pspm = callPackage ../tools/package-management/pspm { };
+
   pridecat = callPackage ../tools/misc/pridecat { };
 
   pridefetch = callPackage ../tools/misc/pridefetch { };
